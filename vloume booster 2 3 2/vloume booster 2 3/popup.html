@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img id="image"
+                src="https://play-lh.googleusercontent.com/uxFz-QRxmMAhP2_sPzGAytPDkomsNq8_wCIm6lC-1r_nx68VFYPjyDCoRxx2dbBRzw"
+                alt="">
+            <h1 for="boostAmount">Volume Booster</h1>
+        </div>
+        <div class="toggle">
+            <input id="onoff" type="checkbox" checked>
+        </div>
+    </header>
+
+    <section class="range">
+        <p id="gray">Level: <span id="text">0%</span></p>
+        <input type="range" id="boostAmount" min="0" max="1000" value="0" step="1">
+    </section>
+
+
+    <h6 class="tabs__title">No tabs playing audio right now.</h6>
+    <section class="tabs">
+        <div class="tabs__list"></div>
+    </section>
+
+
+    <template id="template-tab">
+        <a href="#" class="tab">
+            <div class="tab__item tab__icon">
+                <img id="imgg" class="tab__icon-image" src="" alt="">
+            </div>
+            <div class="tab__item tab__title"></div>
+        </a>
+    </template>
+    <div class="rating">
+        <a href="https://chrome.google.com/webstore" target="_blank">Please, Rate Us!</a>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

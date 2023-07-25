@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+body {
+    max-width: 320px;
+    max-height: 403px;
+    padding: 0px;
+    background-color: #1f1f20;
+    font-family: "Josefin Sans", sans-serif;
+    color: aliceblue;
+    border-top: 4px solid #fe0100;
+    border-right: 4px solid #18bfed;
+    border-left: 4px solid #fe0100;
+    border-bottom: 4px solid #18bfed;
+    border-radius: 5px;
+}
+
+header {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.toggle {
+    margin-right: 10px;
+}
+
+#image {
+    height: 70px;
+    width: 70px;
+}
+
+input[type="checkbox"] {
+    margin-right: 25px;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: gray;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.2s;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: translateX(100%);
+    background: #fff;
+}
+
+input[type="checkbox"]:checked {
+    background: #18bfed;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.range {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+    margin-top: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 20px;
+    width: 7px;
+    height: 25px;
+    background: #1b73e9;
+    border: 2px solid #18bfed;
+    cursor: pointer;
+}
+
+input[type="range"]:focus {
+    outline: none;
+    opacity: 1;
+}
+
+h6 {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+.tabs__title {
+    margin-bottom: 7px;
+    text-align: center;
+    font-weight: 545;
+    color: #ffffff;
+    padding-top: 14px;
+    line-height: 0px;
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+
+  .tabs__list {
+    max-height: 111px;
+    padding: 5px 5px 5px 5px;
+    overflow: hidden;
+    min-height: 96px;
+    
+  }
+  .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+    color: #cbcbcb;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    align-items: center;
+    padding: 0.3em 0;
+    border-radius: 10px;
+  }
+  
+  .tab:last-child {
+    border-bottom: hidden;
+    height: 40px;
+  }
+  
+  .tab:hover {
+    background-color: #eef6fa;
+    color: black;
+  }
+  
+  .tab__item {
+    white-space: nowrap;
+    padding: 0.4em 0.25em;
+  }
+
+.tab__icon {
+    padding: 0 0.25em;
+    display: flex;
+  }
+  
+  .tab__item:first-child {
+    padding-left: 0.5em;
+  }
+  
+  .tab__item:last-child {
+    padding-right: 0.5em;
+  }
+  
+  .tab__icon-image {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .tab__title {
+    line-height: 1.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+  }
+  .grayscale {
+    filter: grayscale(100%);
+  }
+  .graay{
+      color: rgb(85, 85, 85);
+  }
+
+  .rating{
+    text-align: center;
+    margin-top: 27px;
+    padding-bottom: 20px;
+  }
+.rating a{
+  font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(0 0 0);
+    background-color: #18bfed;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
